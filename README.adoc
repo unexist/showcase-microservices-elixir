@@ -1,0 +1,7 @@
+= Showcase for microservices on Elixir
+
+This project holds a showcase for Elixir related things.
+
+== todo-service-phoenix
+
+Small implementation based on Phoenix and 3-Layer
