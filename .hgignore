@@ -1,0 +1,29 @@
+syntax: glob
+
+# IntelliJ
+**/*.iml
+*.iml
+*.bin
+
+# Java
+target/
+.idea/
+.mvn/
+
+# Zig
+**/zig-cache/*
+**/zig-out/*
+
+# Rust
+**/target/*
+
+# Elixir
+**/_build/*
+**/cover/*
+**/deps/*
+**/doc/*
+**/.fetch
+**/erl_crash.dump
+**/*.ez
+**/todo_service_elixir-*.tar
+**/priv/static/
