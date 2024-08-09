@@ -8,21 +8,21 @@
 use Mix.Config
 
 config :todo_service_elixir,
-  ecto_repos: [TodoServiceElixir.Repo],
-  generators: [binary_id: true]
+       ecto_repos: [TodoServiceElixir.Repo],
+       generators: [binary_id: true]
 
 # Configures the endpoint
 config :todo_service_elixir, TodoServiceElixirWeb.Endpoint,
-  url: [host: "localhost"],
-  secret_key_base: "oVNqDsxVTTeARYWbqsbXJsu6IfpQEkQ0kX+lUmhMXSPrYDhYyTNZ2n9a7CPt+fGB",
-  render_errors: [view: TodoServiceElixirWeb.ErrorView, accepts: ~w(json), layout: false],
-  pubsub_server: TodoServiceElixir.PubSub,
-  live_view: [signing_salt: "f35kkwFk"]
+       url: [host: "localhost"],
+       secret_key_base: "oVNqDsxVTTeARYWbqsbXJsu6IfpQEkQ0kX+lUmhMXSPrYDhYyTNZ2n9a7CPt+fGB",
+       render_errors: [view: TodoServiceElixirWeb.ErrorView, accepts: ~w(json), layout: false],
+       pubsub_server: TodoServiceElixir.PubSub,
+       live_view: [signing_salt: "f35kkwFk"]
 
 # Configures Elixir's Logger
 config :logger, :console,
-  format: "$time $metadata[$level] $message\n",
-  metadata: [:request_id]
+       format: "$time $metadata[$level] $message\n",
+       metadata: [:request_id]
 
 # Use Jason for JSON parsing in Phoenix
 config :phoenix, :json_library, Jason
