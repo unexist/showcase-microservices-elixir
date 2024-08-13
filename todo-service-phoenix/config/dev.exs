@@ -4,7 +4,7 @@ use Mix.Config
 config :todo_service_elixir, TodoServiceElixir.Repo,
        username: "postgres",
        password: "postgres",
-       database: "todo_service_elixir_dev",
+       database: "todo_service_dev",
        hostname: "localhost",
        show_sensitive_data_on_connection_error: true,
        pool_size: 10
