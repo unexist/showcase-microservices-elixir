@@ -9,6 +9,10 @@ schema-create:
 migrate:
 	mix ecto.migrate
 
+scaffold:
+	mix phx.gen.json Admin Todo todos \
+		name:string description --no-context --no-schema
+
 db-create:
 	mix ecto.create
 
