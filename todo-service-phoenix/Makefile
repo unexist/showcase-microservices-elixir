@@ -18,3 +18,6 @@ db-create:
 
 db-drop:
 	mix ecto.drop
+
+run:
+	mix phx.server
