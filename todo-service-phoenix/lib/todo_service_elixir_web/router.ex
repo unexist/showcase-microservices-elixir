@@ -7,6 +7,10 @@ defmodule TodoServiceElixirWeb.Router do
 
     scope "/api", TodoServiceElixirWeb do
         pipe_through :api
+        get "/todos", TodoController, :index
+        put "/todos", TodoController, :edit
+        post "/todos", TodoController, :create
+        delete "/todos", TodoController, :delete
     end
 
     # Enables LiveDashboard only for development
