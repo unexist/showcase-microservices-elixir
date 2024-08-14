@@ -1,0 +1,19 @@
+profiles:
+  development:
+    data:
+      rest_host: http://localhost:8080
+
+requests:
+  rest: !folder
+    name: REST
+    requests:
+      get-todo: !request
+        method: GET
+        url: "{{rest_host}}/todo"
+
+      post-todo: !request
+        method: POST
+        url: "{{rest_host}}/todo"
+        headers:
+          accept: application/json
+        body: !json { "description": "Todo string", "title": "Todo string" }
